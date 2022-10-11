@@ -1,8 +1,6 @@
 import React from 'react';
 import './Home';
-// import Image from '../assets/img1.jpg'
-
-import Image2 from '../assets/img2.jpg'
+import Image2 from '../assets/img2.jpg';
 
 const Home = () => {
     return (
