@@ -4,12 +4,14 @@ import Blog from "./components/Blog";
 import Root from "./components/Root";
 import Home from './components/Home';
 import Statistics from "./components/Statistics";
+import ShowError from "./components/ShowError";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement:<ShowError></ShowError>,
         children:[
             {path: '/', element: <Home></Home>},
             {path: 'home', element: <Home></Home>},
