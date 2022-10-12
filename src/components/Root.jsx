@@ -9,9 +9,6 @@ export const TopicsContext = createContext();
 const Root = () => {
     const data = useLoaderData();
     const topics = data.data;
-    // console.log(topics)
-
-
 
     return (
         <div>

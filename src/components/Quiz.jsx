@@ -22,28 +22,23 @@ const Quiz = ({ quiz }) => {
                         {
                             options.map(option =>
                                 <div >
-                                    <p id='opt' onClick={e => {
-                                        if(e.target.innerText.replace(/\s/g, '') === correctAnswer.replace(/\s/g, ''))
-                                        {
-                                         toast("Correct");   
+                                    <button onClick={e => {
+                                        if (e.target.innerText.replace(/\s/g, '') === correctAnswer.replace(/\s/g, '')) {
+                                            toast("Correct");
                                         }
-                                        else{
-                                            toast("Wrong");
+                                        else {
+                                            toast("False");
                                         }
                                     }
-
-                                    }>  {option}</p>
+                                    }> {option}</button>
                                 </div>
                             )
                         }
-                        
                     </div>
 
                     <button onClick={() => correctAnswerShow(quiz)}>
-                        <FontAwesomeIcon className='absolute top-1 text-purple-800 text-2xl right-3' icon={faEye}></FontAwesomeIcon>
+                        <FontAwesomeIcon className=' absolute top-1 text-purple-800 text-2xl right-3' icon={faEye}></FontAwesomeIcon>
                     </button>
-                    
-
                 </div>
             </div>
             <ToastContainer position='top-center' autoClose={1000} />
@@ -52,16 +47,3 @@ const Quiz = ({ quiz }) => {
 };
 
 export default Quiz;
-
-
-
-// {
-//     options.map(option =>
-    
-//         <button
-//     className='text-left text-amber-900'
-//         key={option.index}
-
-        
-//     > <input type="radio" name="radio-1" className="radio" />  {option}</button>)
-// }

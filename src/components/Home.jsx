@@ -1,16 +1,12 @@
 import React, { useContext } from 'react';
 import './Home';
 import Image2 from '../assets/img2.jpg';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { TopicsContext } from './Root';
 import Topics from './Topics';
 
 const Home = () => {
     const topics = useContext(TopicsContext);
-    // console.log(topics)
-    // const quizData = useLoaderData();
-    // console.log(quizData)
-    
     
     return (
         <div className='overlay p-8' style={{ background: `url(${Image2})` }} >
