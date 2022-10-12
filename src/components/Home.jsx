@@ -35,40 +35,6 @@ const Home = () => {
                             ></Topics>)
                         }
                     </div>
-
-
-
-
-
-                    
-
-
-                    {/* three extra cards */}
-                    {/* <div className='mt-10 grid xl:grid-cols-3 grid-cols-1 gap-5'>
-                        <div className="card  bg-gray-300 shadow-xl">
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title">UNDERSTAND PROGRAMMING</h2>
-                                <p>Get an overview of computer science, web development, and data science, as well as popular languages like JavaScript and Python.</p>
-                            </div>
-                        </div>
-                        <div className="card  bg-gray-300 shadow-xl">
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title">WRITE BASIC CODE</h2>
-                                <p>Apply key programming concepts like variables and functions by writing your first lines of code.</p>
-                            </div>
-                        </div>
-                        <div className="card  bg-gray-300 shadow-xl">
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title">FIND YOUR FUTURE CAREER</h2>
-                                <p>Determine your path after exploring different careers in tech and hearing from real-life web developers, data scientists, and more.</p>
-                            </div>
-                        </div>
-
-
-
-                      
-    
-                    </div> */}
                 </div>
             </div>
         </div>
